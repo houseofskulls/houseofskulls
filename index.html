@@ -19,6 +19,16 @@
             font-family: 'Palette Mosaic', cursive;
             font-size: 90px;
         }
+        a:link{
+           color: white;
+           text-decoration: none;
+        }
+        a:visited{
+           color: white;
+        }
+        a:hover, a:focus{
+            color: hotpink
+        }
         .people{
             display: flex;
             justify-content: space-evenly;
@@ -33,7 +43,13 @@
             flex-direction: column;
             margin: 0 1.5em 5em 1.5em;
             box-shadow: 15px 20px rgb(255, 0, 179);
+            transition: 0.3s ease-in-out;
         }
+        .person:hover, .person:focus{
+            transform: translateY(-10px);
+            box-shadow: 15px 30px rgb(255, 0, 179);
+        }
+
         .person > img{
             width: 200px;
             height: 200px;
@@ -53,26 +69,40 @@
     </h1>
     <main>
         <div class="people">
-            <div class="person">
-                <img src="img/Pabl0.webp" alt="">
-                <p>Pabl0</p>
-            </div>
-            <div class="person">
-                <img src="img/zirconium.webp" alt="">
-                <p>zirconium</p>
-            </div>
-            <div class="person">
-                <img src="img/torterabytes.webp" alt="">
-                <p>torterabytes</p>
-            </div>
-            <div class="person">
-                <img src="img/smardragun.webp" alt="">
-                <p>smardragun</p>
-            </div>
-            <div class="person">
-                <img style="image-rendering: pixelated;" src="img/sxbzu.png" alt="">
-                <p>sxbzu</p>
-            </div>
+            <a href="Pabl0.html">
+                <div class="person">
+                    <img src="img/Pabl0.webp" alt="">
+                    <p>Pabl0</p>
+                </div>
+            </a>
+           
+            <a href="zirconium.html">
+                <div class="person">
+                    <img src="img/zirconium.webp" alt="">
+                    <p>zirconium</p>
+                </div>
+            </a>
+
+            <a href="torterabytes.html">
+                <div class="person">
+                    <img src="img/torterabytes.webp" alt="">
+                    <p>torterabytes</p>
+                </div>
+            </a>
+
+            <a href="smardragun.html">
+                <div class="person">
+                    <img src="img/smardragun.webp" alt="">
+                    <p>smardragun</p>
+                </div>
+            </a>
+            
+            <a href="sxbzu.html">
+                <div class="person">
+                    <img style="image-rendering: pixelated;" src="img/sxbzu.png" alt="">
+                    <p>sxbzu</p>
+                </div>
+            </a>
         </div>
     </main>
 </body>
