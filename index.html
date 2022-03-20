@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>House of Skulls</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            font-family: 'Roboto Mono', monospace;
+        }
+        h1{
+            margin-top: 0;
+            font-family: 'Palette Mosaic', cursive;
+            font-size: 90px;
+        }
+        .people{
+            display: flex;
+            justify-content: space-between;
+            min-width: 300px;
+            flex-wrap: wrap;
+            margin: 0 5em;
+        }
+        .person{
+            text-align: center;
+            display: flex;
+            padding: 20px;
+            background-color: rgb(20, 0, 134);
+            flex-direction: column;
+            margin-bottom: 5em;
+            box-shadow: 15px 20px rgb(255, 27, 186);
+        }
+        .person > img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <img width="300px" src="img/skull.png" alt="">
+    </div>
+    
+    <h1 style="text-align: center;">
+        The House of Skulls
+    </h1>
+    <main>
+        <div class="people">
+            <div class="person">
+                <img src="img/Pabl0.webp" alt="">
+                <p>Pabl0</p>
+            </div>
+            <div class="person">
+                <img src="img/zirconium.webp" alt="">
+                <p>zirconium</p>
+            </div>
+            <div class="person">
+                <img src="img/torterabytes.webp" alt="">
+                <p>torterabytes</p>
+            </div>
+            <div class="person">
+                <img src="img/smardragun.webp" alt="">
+                <p>smardragun</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
